@@ -9,7 +9,7 @@ async function main() {
   // The old way can be seen below:
   // let provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL)
   // On ether 6 and above, you should use like this
-  let provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
+  let provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL);
   // let provider = new ethers.providers.JsonRpcProvider(process.env.RPC_URL)
   let wallet = new ethers.Wallet(process.env.PRIVATE_KEY, provider);
   // const encryptedJson = fs.readFileSync("./.encryptedKey.json", "utf8");
